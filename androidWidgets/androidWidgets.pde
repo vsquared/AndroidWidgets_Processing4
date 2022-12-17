@@ -28,7 +28,6 @@ import android.widget.ToggleButton;
 import android.widget.ListView;
 import android.content.res.ColorStateList;
 import android.graphics.drawable.Drawable;
-import androidx.core.graphics.drawable.DrawableCompat;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.CalendarView;
