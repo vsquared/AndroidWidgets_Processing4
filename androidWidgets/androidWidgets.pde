@@ -17,6 +17,10 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
+import android.view.inputmethod.InputMethodManager;
+import android.view.KeyEvent;
+import android.view.InputEvent;
+import android.text.InputType;
 import android.widget.RelativeLayout;
 import android.widget.ProgressBar;
 import android.widget.SeekBar;
@@ -31,7 +35,6 @@ import android.graphics.drawable.Drawable;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.CalendarView;
-import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.ArrayAdapter;
 import android.widget.AdapterView;
@@ -70,7 +73,8 @@ void setup() {
       radioGroup(100, 700, WHITE, 26.0);
       calendarView(120, 850, WHITE);
       toggleButton(1400, 650, 150, "Off", 16);
-      listView(900, 800, 500, 800, WHITE, 26.0, Gravity.CENTER);
+      listView(700, 700, 500, 800, WHITE, 26.0, Gravity.CENTER);
+      editNum(1300, 500, 300, 100, ORANGE, BLACK, 24.0);
     }
   }
   );
@@ -80,5 +84,5 @@ void draw() {
   background(BLUE);
   fill(GREEN);
   circle(1400, 150, seekBarVal);
-  image(andy, 980, 480, 300, 300);
+  image(andy, 880, 400, 300, 300);
 }
