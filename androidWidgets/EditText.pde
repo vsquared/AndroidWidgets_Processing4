@@ -10,7 +10,7 @@ void editText(float x, float y, int w, color bkgrnd, color txtColor, float txtSi
   editText.setTextSize(txtSize);
   editText.setHint("Enter text...");
   editText.setHintTextColor(Color.rgb(170, 170, 170));  
-  editText.requestFocus();
+  //editText.requestFocus();
   editText.setOnKeyListener(new View.OnKeyListener() {
     boolean onKey(View v, int keyCode, KeyEvent event) {
       if (event.getAction() == KeyEvent.ACTION_DOWN && event.getKeyCode()== KeyEvent.KEYCODE_ENTER) {
